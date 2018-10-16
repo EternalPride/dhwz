@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>信息港</title>
+<style type="text/css">
+ul{list-style: none;margin:0;padding:0;}
+li{
+	list-style:none;
+	line-height:32px;
+}
+.left{
+	width:180px;
+	height:240px;
+	position:fixed;
+	top:80px;
+	left:50px;
+}
+p{
+	line-height:200%;
+}
+.right{
+	width:960px;
+	margin:10px auto;
+	padding:30px;
+}
+h2{
+	position: relative;
+	animation-name: my;
+	animation-timing-function: ease;
+	-webkit-animation-name: my;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease;
+}
+@keyframes  my{
+	from{right: 500px;
+	opacity: 0;}
+	to{right: 0px;
+	opacity: 100;}
+	
+}
+.xin::before{
+/*	content:attr(data-con);*/
+
+	margin-right: 5px;
+	right: 20px;}
+	.xin:hover:after{
+	content: url(images/11.png);
+	margin-left: 5px;}
+	p::first-line{
+		color: greenyellow;
+	}
+	.as::first-letter
+	{
+		font-size: 30px;
+		color: burlywood;
+		padding-right: 5px;
+		
+	}
+	:target{
+		color:green;
+		
+		
+	}
+</style>
+</head>
+<body>
+<h2 align="center">信息港</h2>	
+<ul class="left">
+	<li class="xin"data-con = "换个"><a href="#n" >层叠样式表</a></li>
+	<li class="xin" data-con = "的个"><a href="#n2">CSS3样式</a></li>
+	<li class="xin"><a href="#n3">class选择器</a></li>
+    <li></li>
+</ul>
+<div class="right">
+<h2 id="n">层叠样式表</h2>
+<p>1990年，Tim Berners-Lee和Robert Cailliau共同发明了Web。1994年，Web真正走出实验室。<br>
+
+从HTML被发明开始，样式就以各种形式存在。不同的浏览器结合它们各自的样式语言为用户提供页面效果的控制。最初的HTML只包含很少的显示属性。<br>
+
+随着HTML的成长，为了满足页面设计者的要求，HTML添加了很多显示功能。但是随着这些功能的增加，HTML变的越来越杂乱，而且HTML页面也越来越臃肿。于是CSS便诞生了。<br>
+
+1994年哈坤·利提出了CSS的最初建议。而当时伯特·波斯(Bert Bos)正在设计一个名为Argo的浏览器，于是他们决定一起设计CSS。<br>
+
+其实当时在互联网界已经有过一些统一样式表语言的建议了，但CSS是第一个含有"层叠"丰意的样式表语言。在CSS中，一个文件的样式可以从其他的样式表中继承。读者在有些地方可以使用他自己更喜欢的样式，在其他地方则继承或"层叠"作者的样式。这种层叠的方式使作者和读者都可以灵活地加入自己的设计，混合每个人的爱好。层叠样式表是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。<br>
+层叠样式表(英文全称:Cascading Style Sheets)是一种用来表现HTML(标准通用标记语言的一个应用)或XML(标准通用标记语言的一个子集)等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。<br>
+
+CSS 能够对网页中元素位置的排版进行像素级精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力。
+</p>
+<h2 id="n2">CSS样式</h2>
+<p>CSS目前最新版本为CSS3，是能够真正做到网页表现与内容分离的一种样式设计语言。相对于传统HTML的表现而言，CSS能够对网页中的对象的位置排版进行像素级的精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力，并能够进行初步交互设计，是目前基于文本展示最优秀的表现设计语言。CSS能够根据不同使用者的理解能力，简化或者优化写法，针对各类人群，有较强的易读性。如果你要在HTML元素中设置CSS样式，你需要在元素中设置"id" 和 "class"选择器。[1] d 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 "#" 来定义。以下的样式规则应用于元素属性 id="para1":</p>
+<h2 id="n3">class选择器</h2>
+<p>class 选择器用于描述一组元素的样式，class选择器有别于id选择器，class可以在多个元素中使用。class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点"."号显示：在以下的例子中，所有拥有 center 类的 HTML 元素均为居中。</p>
+<ul>
+	<li class="as">As long as the effort of deep strokes fell great oaks</li>
+    <li class="as">只要功夫深，铁杵磨成针</li>
+</ul>
+
+</div>
+
+</body>
+</html>
